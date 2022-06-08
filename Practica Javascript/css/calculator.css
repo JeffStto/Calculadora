@@ -1,0 +1,136 @@
+body{
+     padding: 0;
+     margin: 0;
+     line-height: 1.6;
+     background-size: cover;
+}
+
+.logo{
+     width: 200px;
+     height: 150px;
+     background-color: white;
+     padding: 5px;
+     margin: 10px -20px;
+     border-radius: 10px;
+}
+
+nav{
+     display: flex;
+     align-items: center;
+     /* alinea elementos de display: flex */
+     justify-content: space-around;
+     /* elementos se distribuyen uniformemente en la línea con el mismo espacio a su alrededor de display: flex */
+     min-height: 8vh;
+     /* vh_ancho de ventana grafica */
+     background-color: black;
+     color: white;
+     font-family: 'Dancing Script', cursive, sans-serif;
+     /* google fonts y font default*/
+}
+
+/* boton decorativo*/
+.ham{
+     cursor: pointer;
+     /* cursor de flecha a dedo selector */
+     border: none;
+     background-image: url(../iconos/bars-solid.svg);
+     width: 30px;
+     height: 30px;
+     border-radius: 3px;
+}
+
+.enlaces_menu{
+     display: flex;
+     padding: 0;
+     margin-left: -30px;
+}
+
+.enlaces_menu li{
+     padding: 0 40px;
+     list-style-type: none;
+     /* marcador de elementos de lista */
+     transition: 0.50s;
+     /* velocidad para recorrer enlaces */
+}
+
+.enlaces_menu li a{
+     text-decoration: none;
+     font-size: 3.0rem;
+     /* Tamaño de la letra (40px) partiendo del elemento raíz (html) */
+     color: white;
+     font-weight: 600;
+}
+
+.enlaces_menu li:hover{
+     /* cambiar fondo con cursor */
+     background-color: goldenrod;
+}
+
+
+
+/* 1 */
+* {
+  box-sizing: border-box;
+}
+
+/* 2 */
+body {
+  /* border: solid; */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* 3 */
+body{
+    background: url(../fondos/fondo.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+/* 4 */
+.calculadora{
+     display: block;
+     margin:0 auto;
+     padding: 20px;
+     width: 345px;
+     height: 540px;
+     border-radius: 25px;
+     background-image: url(../fondos/calculator.jpg);
+     background-size: 100% 100%;
+     /* background-position: center; */
+     margin-top: 20px;
+}
+
+/* 5 */
+.resultado{
+     display: block;
+     text-align: center;
+     font-size: 60px;
+     font-weight: bolder;
+     margin-bottom: 50px;
+     width: 300px;
+     height: 100px;
+     line-height: 100px;
+     background-color: rgba(255, 196, 0, 0.515);
+     border-radius: 25px;
+     overflow-y: scroll;
+     color: darkblue;
+}
+
+/* 6 */
+.calculadora td button{
+     display: block;
+     width: 70px;
+     height: 70px;
+     font-size: 25px;
+     border-radius: 15px;
+}
+
+/* 7 */
+.creditos{
+     display: block;
+     padding-top: 20px;
+     color: darkturquoise;
+     text-align: center;
+     font-weight: bold;
+}
+

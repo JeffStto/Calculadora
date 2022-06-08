@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/calculator.css" type="text/css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/78cc445519.js" crossorigin="anonymous"></script>
+
+     <title>Calculadora</title>
+</head>
+<!-- controlador de eventos para ejecutar scripts al cargar la pagina (init ( ))-->
+<body onload="init();">
+
+     <header>
+          <nav>
+               <a href="#">
+                    <img  class="logo" src="iconos/address-card-solid.svg" alt="logo">
+               </a>
+               <ul class="enlaces_menu">
+                    <li><a href="#">FORMULARIO</a></li>
+                    <li><a href="2_calculator.html">CALCULADORA</a></li>
+               </ul>
+               <button type="button" class="ham">
+               </button>
+          </nav>
+     </header>
+
+
+     <!-- tabla -->
+     <table class="calculadora">
+
+          <!-- tr tablero de resultados -->
+          <tr>
+               <td colspan="4"><span id="resultado" class="resultado"></span></td>
+          </tr>
+
+          <!-- tr 7 a / -->
+          <tr>
+               <!-- td button -->
+               <td><button id="siete">7</button></td>
+               <td><button id="ocho">8</button></td>
+               <td><button id="nueve">9</button></td>
+               <td><button id="division">/</button></td>
+          </tr>
+
+          <!-- tr 4 a * -->
+          <tr>
+               <!-- td button -->
+               <td><button id="cuatro">4</button></td>
+               <td><button id="cinco">5</button></td>
+               <td><button id="seis">6</button></td>
+               <td><button id="multiplicacion">*</button></td>
+          </tr>
+
+          <!-- tr 1 a - -->
+          <tr>
+               <!-- td button -->
+               <td><button id="uno">1</button></td>
+               <td><button id="dos">2</button></td>
+               <td><button id="tres">3</button></td>
+               <td><button id="resta">-</button></td>
+          </tr>
+
+          <!-- tr = a + -->
+          <tr>
+               <!-- td button -->
+               <td><button id="igual">=</button></td>
+               <td><button id="reset">C</button></td>
+               <td><button id="cero">0</button></td>
+               <td><button id="suma">+</button></td>
+          </tr>
+
+          <!-- tr marca -->
+          <tr>
+               <!-- td p -->
+               <td colspan="4"><p class="creditos">Calculadora JS</p></td>
+          </tr>
+
+     </table>
+
+     <script src="js/calculator.js" type="text/javascript"></script>
+</body>
+</html>
